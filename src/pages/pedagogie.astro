@@ -1,0 +1,442 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+// Documents références spécifiques
+const refDocs = [
+    {
+        name: "Projet d'Établissement 2024-2028",
+        url: "/assets/docs/projet-etablissement.pdf",
+    },
+    {
+        name: "Charte de vie scolaire",
+        url: "/assets/docs/charte-vie-scolaire.pdf",
+    },
+    {
+        name: "Parcours d'Éducation Artistique et Culturel",
+        url: "/assets/docs/peac.pdf",
+    },
+];
+---
+
+<Layout title="Pédagogie">
+    <!-- Hero Section -->
+    <div class="relative h-64 md:h-80 overflow-hidden bg-slate-900">
+        <img
+            src="/assets/images/Photo05.jpg"
+            alt="En classe"
+            class="w-full h-full object-cover opacity-60"
+        />
+        <div class="absolute inset-0 flex items-center justify-center">
+            <h1
+                class="text-3xl md:text-5xl font-bold text-white tracking-tight drop-shadow-md text-center px-4"
+            >
+                Pédagogie
+            </h1>
+        </div>
+    </div>
+
+    <div class="bg-white py-16">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+            <!-- Section 0: Une école au service des parents -->
+            <div class="mb-20 text-center max-w-3xl mx-auto">
+                <h2
+                    class="text-3xl font-bold text-slate-900 mb-6"
+                    style="font-family: 'EB Garamond', serif;"
+                >
+                    Une école au service des parents
+                </h2>
+                <div class="prose prose-lg prose-slate text-slate-600 mx-auto">
+                    <p>
+                        Les enseignantes de notre école sont recrutées sur la
+                        base de compétences pédagogiques solides. Elles adhèrent
+                        au projet éducatif dans son intégralité y compris dans
+                        la transmission de la foi.
+                    </p>
+                    <p>
+                        Ce choix d’une équipe pédagogique pleinement investie
+                        dans le projet éducatif constitue la garantie d’un
+                        enseignement de qualité dans le respect de l’identité
+                        propre de l’établissement.
+                    </p>
+                    <p class="font-medium text-slate-800">
+                        L’école des Tilleuls offre une scolarité qui vise une
+                        collaboration efficace et complète entre la famille et
+                        l’école dans un climat de confiance réciproque.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Section 1: Education Intégrale -->
+            <div class="flex flex-col md:flex-row gap-12 items-start mb-20">
+                <div class="md:w-3/5">
+                    <h2
+                        class="text-3xl font-bold text-slate-900 mb-6"
+                        style="font-family: 'EB Garamond', serif;"
+                    >
+                        Education intégrale
+                    </h2>
+                    <div
+                        class="prose prose-lg prose-slate text-slate-600 text-justify"
+                    >
+                        <p>
+                            L’école est le lieu par excellence de la formation
+                            intellectuelle de l’enfant, mais son rôle ne
+                            s’arrête pas là. En effet, c’est durant les années
+                            décisives de l’école primaire que se forgent non
+                            seulement l’intelligence, mais aussi l’ensemble de
+                            la personnalité de l’enfant.
+                        </p>
+                        <p>
+                            L’école des Tilleuls propose donc de seconder les
+                            parents en offrant une formation complète –
+                            intelligence, volonté, caractère, cœur – et
+                            personnalisée, pour répondre aux besoins de chaque
+                            enfant.
+                        </p>
+                        <p>
+                            La formation humaine encourage l’exercice des
+                            valeurs humaines indispensables à la vie sociale.
+                            Chaque enfant est invité à mettre en pratique tant à
+                            l’école qu’à la maison ces bonnes habitudes que sont
+                            la générosité, la loyauté, la joie, la sincérité,
+                            l’esprit de service, la politesse, le respect des
+                            autres, etc.
+                        </p>
+                    </div>
+                </div>
+                <div class="md:w-2/5 mt-8 md:mt-0">
+                    <div
+                        class="rounded-2xl overflow-hidden shadow-lg transform rotate-2 hover:rotate-0 transition-transform duration-500"
+                    >
+                        <img
+                            src="/assets/images/Photo12.jpg"
+                            alt="Vie de classe"
+                            class="w-full h-auto object-cover"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 1b: Préceptorat (Suite Education Intégrale) -->
+            <div
+                class="bg-slate-50 p-8 rounded-2xl border border-slate-100 mb-20"
+            >
+                <div
+                    class="flex flex-col md:flex-row-reverse gap-12 items-center"
+                >
+                    <div class="md:w-1/3">
+                        <img
+                            src="/assets/images/Photo02.jpg"
+                            alt="Accompagnement"
+                            class="rounded-xl shadow-md w-full h-auto object-cover"
+                        />
+                    </div>
+                    <div
+                        class="md:w-2/3 prose prose-lg prose-slate text-slate-600 text-justify"
+                    >
+                        <h3
+                            class="text-xl font-bold text-slate-900 mb-4 not-prose"
+                        >
+                            Un suivi personnalisé : Le Préceptorat
+                        </h3>
+                        <p>
+                            De petits objectifs concrets sont proposés chaque
+                            mois aux élèves selon un plan de formation cohérent
+                            et adapté à chaque âge. Les parents sont associés à
+                            cette démarche, notamment à travers la présentation
+                            de la vertu chaque mois.
+                        </p>
+                        <p>
+                            Concrètement, chaque élève à partir du CE2 bénéficie
+                            d’un suivi individuel par un précepteur qui le
+                            rencontre environ tous les 15 jours, l’écoute avec
+                            une attention bienveillante et l’encourage dans ses
+                            efforts de comportement tant à l’école qu’à la
+                            maison.
+                        </p>
+                        <p>
+                            Le préceptorat est un outil important dans la mise
+                            en application du projet éducatif de l’école, qui
+                            permet d’aider l’enfant à mieux se connaitre et à
+                            progresser dans la joie et la confiance en se fixant
+                            de petits objectifs personnels basés sur la vertu du
+                            mois.
+                        </p>
+                        <p>
+                            Les relations entretenues par le précepteur avec les
+                            parents et l’institutrice favorisent la cohérence et
+                            l’harmonie éducative autour de l’enfant.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 2: Apprentissage des vertus -->
+            <div class="mb-20 text-center max-w-3xl mx-auto">
+                <h2
+                    class="text-3xl font-bold text-slate-900 mb-8"
+                    style="font-family: 'EB Garamond', serif;"
+                >
+                    L’apprentissage des vertus
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                    <div
+                        class="bg-amber-50 rounded-xl p-6 border border-amber-100"
+                    >
+                        <span class="block text-4xl mb-2">🤝</span>
+                        <h4 class="font-bold text-amber-900">
+                            Loyauté & Sincérité
+                        </h4>
+                    </div>
+                    <div
+                        class="bg-amber-50 rounded-xl p-6 border border-amber-100"
+                    >
+                        <span class="block text-4xl mb-2">😊</span>
+                        <h4 class="font-bold text-amber-900">
+                            Joie & Politesse
+                        </h4>
+                    </div>
+                    <div
+                        class="bg-amber-50 rounded-xl p-6 border border-amber-100"
+                    >
+                        <span class="block text-4xl mb-2">🤲</span>
+                        <h4 class="font-bold text-amber-900">
+                            Service & Générosité
+                        </h4>
+                    </div>
+                </div>
+                <p class="text-lg text-slate-600 leading-relaxed">
+                    Chaque enfant est invité à mettre en pratique ces bonnes
+                    habitudes au quotidien. Des petits objectifs concrets sont
+                    proposés chaque mois aux élèves selon un plan de formation
+                    cohérent et adapté à chaque âge.
+                </p>
+            </div>
+
+            <!-- Section 3: Nos Méthodes -->
+            <div class="flex flex-col md:flex-row gap-12 items-center mb-16">
+                <div class="md:w-1/2">
+                    <div
+                        class="rounded-2xl overflow-hidden shadow-lg transform -rotate-1 hover:rotate-0 transition-transform duration-500"
+                    >
+                        <img
+                            src="/assets/images/Photo08.jpg"
+                            alt="Travail scolaire"
+                            class="w-full h-auto object-cover"
+                        />
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <h2
+                        class="text-3xl font-bold text-slate-900 mb-6"
+                        style="font-family: 'EB Garamond', serif;"
+                    >
+                        Nos méthodes
+                    </h2>
+                    <p class="text-slate-600 mb-6 font-medium">
+                        Les enseignements s’appuient sur des méthodes
+                        pédagogiques classiques, structurées et éprouvées.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <svg
+                                class="w-6 h-6 text-green-500 mr-2 flex-shrink-0"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                ><path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path></svg
+                            >
+                            <span class="text-slate-700"
+                                ><strong>Méthode syllabique et gestuelle</strong
+                                > pour l’apprentissage de la lecture et de l’écriture
+                                dès la Grande section (pédagogie Jean qui Rit)</span
+                            >
+                        </li>
+                        <li class="flex items-start">
+                            <svg
+                                class="w-6 h-6 text-green-500 mr-2 flex-shrink-0"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                ><path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path></svg
+                            >
+                            <span class="text-slate-700"
+                                ><strong>Analyse grammaticale et logique</strong
+                                ></span
+                            >
+                        </li>
+                        <li class="flex items-start">
+                            <svg
+                                class="w-6 h-6 text-green-500 mr-2 flex-shrink-0"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                ><path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path></svg
+                            >
+                            <span class="text-slate-700"
+                                >Réflexion et vocabulaire par l’étude de textes
+                                choisis</span
+                            >
+                        </li>
+                        <li class="flex items-start">
+                            <svg
+                                class="w-6 h-6 text-green-500 mr-2 flex-shrink-0"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                ><path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path></svg
+                            >
+                            <span class="text-slate-700"
+                                >Mémorisation et restitution de connaissances</span
+                            >
+                        </li>
+                        <li class="flex items-start">
+                            <svg
+                                class="w-6 h-6 text-green-500 mr-2 flex-shrink-0"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                ><path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path></svg
+                            >
+                            <span class="text-slate-700"
+                                ><strong>Méthode de Singapour</strong> pour les mathématiques</span
+                            >
+                        </li>
+                        <li class="flex items-start">
+                            <svg
+                                class="w-6 h-6 text-green-500 mr-2 flex-shrink-0"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                ><path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path></svg
+                            >
+                            <span class="text-slate-700"
+                                >Enseignement chronologique de l’Histoire de
+                                France</span
+                            >
+                        </li>
+                        <li class="flex items-start">
+                            <svg
+                                class="w-6 h-6 text-green-500 mr-2 flex-shrink-0"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                ><path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path></svg
+                            >
+                            <span class="text-slate-700"
+                                >Initiation à la musique dès la grande section
+                                et à l’anglais dès le CE1</span
+                            >
+                        </li>
+                        <li class="flex items-start">
+                            <svg
+                                class="w-6 h-6 text-green-500 mr-2 flex-shrink-0"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                ><path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path></svg
+                            >
+                            <span class="text-slate-700"
+                                >Remise de bulletins de notes avant chaque
+                                vacances</span
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Ref Docs Section (Bottom) -->
+            <div class="mt-24 pt-12 border-t border-slate-200">
+                <h3
+                    class="text-2xl font-bold text-slate-900 mb-8 text-center"
+                    style="font-family: 'EB Garamond', serif;"
+                >
+                    Documents de Référence
+                </h3>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    {
+                        refDocs.map((doc) => (
+                            <a
+                                href={doc.url}
+                                download
+                                class="group flex items-center p-4 bg-slate-50 border border-slate-200 rounded-xl hover:bg-white hover:shadow-md hover:border-amber-200 transition-all duration-300"
+                            >
+                                <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-red-500 shadow-sm group-hover:bg-red-50 transition-colors">
+                                    <svg
+                                        class="w-6 h-6"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        viewBox="0 0 24 24"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
+                                        />
+                                    </svg>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-semibold text-slate-800 group-hover:text-amber-600 transition-colors">
+                                        {doc.name}
+                                    </h4>
+                                    <span class="text-xs text-slate-500">
+                                        Télécharger le PDF
+                                    </span>
+                                </div>
+                                <div class="ml-auto text-slate-400 group-hover:text-amber-500">
+                                    <svg
+                                        class="w-5 h-5"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        viewBox="0 0 24 24"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                                        />
+                                    </svg>
+                                </div>
+                            </a>
+                        ))
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</Layout>

@@ -1,0 +1,43 @@
+---
+interface Props {
+  images: string[];
+}
+
+const { images = [] } = Astro.props;
+---
+
+<div class="absolute inset-0 z-0 overflow-hidden" id="hero-carousel">
+  {images.map((img, index) => (
+    <div 
+      class={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${index === 0 ? 'opacity-100' : 'opacity-0'} carousel-item`}
+      data-index={index}
+    >
+      <img 
+        src={img} 
+        alt={`Slide ${index + 1}`} 
+        class="w-full h-full object-cover"
+      />
+      <div class="absolute inset-0 bg-slate-900/40"></div>
+    </div>
+  ))}
+</div>
+
+<script>
+  const items = document.querySelectorAll('.carousel-item');
+  let currentIndex = 0;
+
+  if (items.length > 1) {
+    setInterval(() => {
+      // Hide current
+      items[currentIndex].classList.remove('opacity-100');
+      items[currentIndex].classList.add('opacity-0');
+      
+      // Calculate next
+      currentIndex = (currentIndex + 1) % items.length;
+      
+      // Show next
+      items[currentIndex].classList.remove('opacity-0');
+      items[currentIndex].classList.add('opacity-100');
+    }, 5000); // Change every 5 seconds
+  }
+</script>

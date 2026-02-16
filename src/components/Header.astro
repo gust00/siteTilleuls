@@ -1,32 +1,50 @@
 ---
 const links = [
   { text: "Inscription", href: "/inscription" },
-  { text: "Présentation", href: "/presentation" },
-  { text: "Projet Pédagogique", href: "/projet-pedagogique" },
+  { text: "Pédagogie", href: "/pedagogie" },
+  { text: "Vie à l'école", href: "/vie-a-lecole" },
+  { text: "Formation chrétienne", href: "/formation-chretienne" },
   { text: "Nous soutenir", href: "/nous-soutenir" },
   { text: "Documents utiles", href: "/documents" },
   { text: "Contacts", href: "/contact" },
 ];
 ---
 
-<header class="bg-white shadow-sm sticky top-0 z-50 transition-all duration-300" id="main-header">
+<header
+  class="bg-white shadow-sm sticky top-0 z-50 transition-all duration-300"
+  id="main-header"
+>
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center h-20">
       <div class="flex-shrink-0 flex items-center">
         <a href="/" class="flex items-center gap-3 group">
-            <img 
-                src="/assets/images/LOGO-LES-TILLEULS.png" 
-                alt="Logo Les Tilleuls" 
-                class="h-16 w-auto object-contain"
-            />
-          <div class="hidden sm:flex flex-col items-center text-center text-[#003366]">
-            <span class="font-serif text-3xl md:text-4xl leading-none tracking-tighter" style="font-family: 'EB Garamond', serif;">
-              <span class="text-xl md:text-2xl" style="font-family: 'Montserrat', sans-serif;">Les</span>Tilleulss
+          <img
+            src="/assets/images/LOGO-LES-TILLEULS.png"
+            alt="Logo Les Tilleuls"
+            class="h-16 w-auto object-contain"
+          />
+          <div
+            class="hidden sm:flex flex-col items-center text-center text-[#003366]"
+          >
+            <span
+              class="font-serif text-3xl md:text-4xl leading-none tracking-tighter"
+              style="font-family: 'EB Garamond', serif;"
+            >
+              <span
+                class="text-xl md:text-2xl"
+                style="font-family: 'Montserrat', sans-serif;">Les</span
+              >Tilleuls
             </span>
-            <span class="text-[10px] md:text-xs font-bold uppercase tracking-[0.15em] mt-1 font-sans" style="font-family: 'Montserrat', sans-serif;">
+            <span
+              class="text-[10px] md:text-xs font-bold uppercase tracking-[0.15em] mt-1 font-sans"
+              style="font-family: 'Montserrat', sans-serif;"
+            >
               École Primaire Privée
             </span>
-            <span class="text-[10px] md:text-xs font-light font-sans" style="font-family: 'Montserrat', sans-serif;">
+            <span
+              class="text-[10px] md:text-xs font-light font-sans"
+              style="font-family: 'Montserrat', sans-serif;"
+            >
               Voisins-le-Bretonneux
             </span>
           </div>
@@ -35,14 +53,16 @@ const links = [
 
       <!-- Desktop Navigation -->
       <nav class="hidden lg:flex space-x-8">
-        {links.map((link) => (
-          <a
-            href={link.href}
-            class="text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 text-sm uppercase tracking-wide py-2 border-b-2 border-transparent hover:border-slate-900"
-          >
-            {link.text}
-          </a>
-        ))}
+        {
+          links.map((link) => (
+            <a
+              href={link.href}
+              class="text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 text-sm uppercase tracking-wide py-2 border-b-2 border-transparent hover:border-slate-900"
+            >
+              {link.text}
+            </a>
+          ))
+        }
       </nav>
 
       <!-- Mobile Menu Button -->
@@ -56,12 +76,34 @@ const links = [
         >
           <span class="sr-only">Ouvrir le menu</span>
           <!-- Icon when menu is closed -->
-          <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          <svg
+            class="block h-6 w-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"></path>
           </svg>
           <!-- Icon when menu is open -->
-          <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          <svg
+            class="hidden h-6 w-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"></path>
           </svg>
         </button>
       </div>
@@ -69,32 +111,37 @@ const links = [
   </div>
 
   <!-- Mobile Menu -->
-  <div class="hidden lg:hidden bg-white border-t border-slate-100" id="mobile-menu">
+  <div
+    class="hidden lg:hidden bg-white border-t border-slate-100"
+    id="mobile-menu"
+  >
     <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 shadow-lg">
-      {links.map((link) => (
-        <a
-          href={link.href}
-          class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 transition-colors"
-        >
-          {link.text}
-        </a>
-      ))}
+      {
+        links.map((link) => (
+          <a
+            href={link.href}
+            class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 transition-colors"
+          >
+            {link.text}
+          </a>
+        ))
+      }
     </div>
   </div>
 </header>
 
 <script>
-  const btn = document.getElementById('mobile-menu-button');
-  const menu = document.getElementById('mobile-menu');
-  const icons = btn?.querySelectorAll('svg');
+  const btn = document.getElementById("mobile-menu-button");
+  const menu = document.getElementById("mobile-menu");
+  const icons = btn?.querySelectorAll("svg");
 
-  btn?.addEventListener('click', () => {
-    const isExpanded = btn.getAttribute('aria-expanded') === 'true';
-    btn.setAttribute('aria-expanded', (!isExpanded).toString());
-    menu?.classList.toggle('hidden');
-    
+  btn?.addEventListener("click", () => {
+    const isExpanded = btn.getAttribute("aria-expanded") === "true";
+    btn.setAttribute("aria-expanded", (!isExpanded).toString());
+    menu?.classList.toggle("hidden");
+
     // Toggle icons
-    icons?.forEach(icon => icon.classList.toggle('hidden'));
-    icons?.forEach(icon => icon.classList.toggle('block'));
+    icons?.forEach((icon) => icon.classList.toggle("hidden"));
+    icons?.forEach((icon) => icon.classList.toggle("block"));
   });
 </script>

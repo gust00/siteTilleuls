@@ -13,6 +13,7 @@ const documentsCollection = defineCollection({
 const pagesCollection = defineCollection({
     type: 'content',
     schema: z.object({
+        carouselImages: z.array(z.string()).optional(),
         heroTitle: z.string().optional(),
         heroSubtitle: z.string().optional(),
         ctaText1: z.string().optional(),

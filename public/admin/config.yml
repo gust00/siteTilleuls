@@ -28,6 +28,7 @@ collections:
         label: "Page d'Accueil"
         name: "home"
         fields:
+          - {label: "Images du Carousel", name: "carouselImages", widget: "list", field: {label: "Image", name: "image", widget: "image"}}
           - {label: "Titre Principal", name: "heroTitle", widget: "string"}
           - {label: "Sous-titre Introduction", name: "heroSubtitle", widget: "text"}
           - {label: "Texte Bouton 1", name: "ctaText1", widget: "string"}
