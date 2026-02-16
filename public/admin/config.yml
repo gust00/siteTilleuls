@@ -1,0 +1,53 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+
+media_folder: "public/assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  # Collection "Documents Utiles"
+  - name: "documents"
+    label: "Documents à télécharger"
+    folder: "src/content/documents"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Titre du document", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text", required: false}
+      - {label: "Fichier PDF", name: "file", widget: "file"}
+      - {label: "Date de dépôt", name: "date", widget: "datetime", format: "YYYY-MM-DD"}
+
+  # Collection "Pages" (Contenu fixe modifiable)
+  - name: "pages"
+    label: "Contenu des Pages"
+    files:
+      - file: "src/content/pages/home.md"
+        label: "Page d'Accueil"
+        name: "home"
+        fields:
+          - {label: "Titre Principal", name: "heroTitle", widget: "string"}
+          - {label: "Sous-titre Introduction", name: "heroSubtitle", widget: "text"}
+          - {label: "Texte Bouton 1", name: "ctaText1", widget: "string"}
+          - {label: "Lien Bouton 1", name: "ctaLink1", widget: "string"}
+          - {label: "Texte Bouton 2", name: "ctaText2", widget: "string"}
+          - {label: "Lien Bouton 2", name: "ctaLink2", widget: "string"}
+          - {label: "Section Pédagogie (Titre)", name: "sectionTitle", widget: "string"}
+          - {label: "Section Pédagogie (Texte)", name: "sectionText", widget: "text"}
+
+      - file: "src/content/pages/presentation.md"
+        label: "Page Présentation"
+        name: "presentation"
+        fields:
+          - {label: "Titre de la page", name: "title", widget: "string"}
+          - {label: "Notre Histoire (Titre)", name: "historyTitle", widget: "string"}
+          - {label: "Notre Histoire (Texte)", name: "historyText", widget: "markdown"}
+          - {label: "Nos Valeurs (Titre)", name: "valuesTitle", widget: "string"}
+          - {label: "Valeur 1 (Titre)", name: "value1Title", widget: "string"}
+          - {label: "Valeur 1 (Texte)", name: "value1Text", widget: "text"}
+          - {label: "Valeur 2 (Titre)", name: "value2Title", widget: "string"}
+          - {label: "Valeur 2 (Texte)", name: "value2Text", widget: "text"}
+          - {label: "Valeur 3 (Titre)", name: "value3Title", widget: "string"}
+          - {label: "Valeur 3 (Texte)", name: "value3Text", widget: "text"}

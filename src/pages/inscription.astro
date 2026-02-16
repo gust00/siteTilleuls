@@ -1,0 +1,98 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Inscriptions & Tarifs">
+  <!-- Minimal Header Image -->
+  <div class="relative h-64 md:h-80 overflow-hidden bg-slate-900">
+    <img 
+        src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" 
+        alt="Inscriptions École des Tilleuls" 
+        class="w-full h-full object-cover opacity-60"
+    />
+    <div class="absolute inset-0 flex items-center justify-center">
+        <h1 class="text-3xl md:text-5xl font-bold text-white tracking-tight drop-shadow-md">
+            Inscriptions & Tarifs
+        </h1>
+    </div>
+  </div>
+
+  <div class="bg-white py-12 md:py-20">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+      
+      <!-- Explanatory Text -->
+      <div class="prose prose-lg prose-slate mx-auto mb-16 text-center">
+        <p class="lead text-xl text-slate-600">
+          Nous sommes ravis de l'intérêt que vous portez à l'École des Tilleuls.
+          Les inscriptions pour l'année scolaire 2026-2027 sont ouvertes.
+        </p>
+        <p>
+          Pour inscrire votre enfant, merci de télécharger le dossier d'inscription dans la rubrique 
+          <a href="/documents" class="text-slate-900 font-bold underline hover:text-slate-700">Documents utiles</a> 
+          et de nous le retourner complété à l'adresse du secrétariat.
+        </p>
+      </div>
+
+      <!-- Pricing Table -->
+      <div class="bg-slate-50 rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
+        <div class="px-6 py-8 sm:p-10 text-center">
+          <h2 class="text-2xl font-bold text-slate-900">Tarifs 2026-2027</h2>
+          <p class="mt-2 text-sm text-slate-500">Contribution des familles aux frais de scolarité et services annexes.</p>
+        </div>
+        
+        <div class="border-t border-slate-200">
+          <table class="min-w-full divide-y divide-slate-200">
+            <thead class="bg-slate-100">
+              <tr>
+                <th scope="col" class="px-6 py-4 text-left text-xs font-bold text-slate-500 uppercase tracking-wider">Poste</th>
+                <th scope="col" class="px-6 py-4 text-left text-xs font-bold text-slate-500 uppercase tracking-wider">Détails</th>
+                <th scope="col" class="px-6 py-4 text-right text-xs font-bold text-slate-500 uppercase tracking-wider">Montant</th>
+              </tr>
+            </thead>
+            <tbody class="bg-white divide-y divide-slate-200">
+              <!-- Scolarité -->
+              <tr class="hover:bg-slate-50 transition-colors">
+                <td class="px-6 py-5 whitespace-nowrap text-sm font-bold text-slate-900">Scolarité (Maternelle)</td>
+                <td class="px-6 py-5 text-sm text-slate-600">Frais pédagogiques et fournitures inclus</td>
+                <td class="px-6 py-5 whitespace-nowrap text-sm font-bold text-slate-900 text-right">65 € / mois</td>
+              </tr>
+              <tr class="hover:bg-slate-50 transition-colors">
+                <td class="px-6 py-5 whitespace-nowrap text-sm font-bold text-slate-900">Scolarité (Élémentaire)</td>
+                <td class="px-6 py-5 text-sm text-slate-600">Du CP au CM2 - Activités extra-scolaires incluses</td>
+                <td class="px-6 py-5 whitespace-nowrap text-sm font-bold text-slate-900 text-right">75 € / mois</td>
+              </tr>
+              
+              <!-- Cantine -->
+              <tr class="bg-slate-50/50">
+                <td class="px-6 py-5 whitespace-nowrap text-sm font-bold text-slate-900">Cantine</td>
+                <td class="px-6 py-5 text-sm text-slate-600">Repas complet bio et local (4 jours/semaine)</td>
+                <td class="px-6 py-5 whitespace-nowrap text-sm font-bold text-slate-900 text-right">5,50 € / repas</td>
+              </tr>
+              
+              <!-- Garderie -->
+              <tr>
+                <td class="px-6 py-5 whitespace-nowrap text-sm font-bold text-slate-900">Garderie Matin</td>
+                <td class="px-6 py-5 text-sm text-slate-600">De 7h30 à 8h20</td>
+                <td class="px-6 py-5 whitespace-nowrap text-sm font-bold text-slate-900 text-right">Gratuit</td>
+              </tr>
+              <tr>
+                <td class="px-6 py-5 whitespace-nowrap text-sm font-bold text-slate-900">Garderie Soir</td>
+                <td class="px-6 py-5 text-sm text-slate-600">De 16h30 à 18h30 (Goûter inclus)</td>
+                <td class="px-6 py-5 whitespace-nowrap text-sm font-bold text-slate-900 text-right">3 € / soir</td>
+              </tr>
+            </tbody>
+            <tfoot class="bg-slate-50">
+                <tr>
+                    <td colspan="3" class="px-6 py-4 text-xs text-slate-500 italic text-center">
+                        * Les tarifs sont donnés à titre indicatif et peuvent être soumis à révision par le conseil d'administration.
+                        Pour les familles nombreuses, une réduction de 10% s'applique à partir de la 2ème inscription.
+                    </td>
+                </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</Layout>
