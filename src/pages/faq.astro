@@ -1,0 +1,103 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const faqs = [
+    {
+        question:
+            "Faut-il passer un examen de niveau pour entrer aux Tilleuls ?",
+        answer: "Non, il n’y a pas d’examen pour entrer aux Tilleuls. Nous demandons les bulletins et livrets scolaires que nous étudions attentivement. Une fois l’inscription confirmée, l’élève vient passer une demi-journée ou davantage si nécessaire. Pendant cette matinée, l’élève fait le même travail que ses camarades. L’enseignante peut ainsi voir comment il travaille et quelles sont ses éventuels besoins. Elle pourra donner des conseils pour le faire travailler l’été si nécessaire. C’est aussi l’occasion de voir comment se comporte l’élève avec ses camarades et la maîtresse. Ces matinées se passent toujours très bien et il n’est pas rare que les élèves veuillent rester !",
+    },
+    {
+        question: "Dans quels collèges vont les élèves de CM2 ?",
+        answer: "Les élèves de CM2 des Tilleuls vont dans des collèges très variés. Certaines familles optent pour de gros établissements privés sous contrat du secteur (St François d’Assise, le Sacré Cœur, St Exupéry) tandis que d’autres se dirigent vers des collèges non-mixtes comme Hautefeuille, St Joseph des Lys, Les Vignes, Charles de Foucauld. D’autres encore choisissent des internats comme la Légion d’Honneur ou encore le collège public de leur secteur. Chaque élève trouve un collège aisément en sortant des Tilleuls, la région étant riche d’établissements variés qui peuvent correspondre aux attentes de chacun.",
+    },
+    {
+        question: "Quelles sont les possibilités d’activités sportives ?",
+        answer: "Les élèves bénéficient de séances de sport du CP au CM2 au gymnase de Voisins-le-Bretonneux. Un animateur sportif de la ville prend en charge la classe, sous la surveillance de l‘enseignante. Ils vont également à la piscine de Montigny-le-Bretonneux. L’année est répartie en 2 périodes : une période au gymnase et une période à la piscine.",
+    },
+    {
+        question: "Y a-t-il une bibliothèque ?",
+        answer: "Oui, il y a une bibliothèque dans la salle de restauration. Les élèves peuvent emprunter un livre chaque semaine, guidés par leur enseignante. La liste des livres est disponible sur le site des Tilleuls dans l’Espace privé.",
+    },
+    {
+        question: "Quelles sont les aides financières possibles ?",
+        answer: "Les familles qui ne pourraient pas assumer intégralement les frais de scolarité peuvent faire une demande de bourse auprès du trésorier de l’AFIP (Association gestionnaire). Un entretien sera proposé afin de trouver une solution pour chacun. L’AFIP a toujours fait le maximum pour accueillir les familles motivées par le projet mais qui ne pouvaient pas assumer intégralement les scolarités.",
+    },
+    {
+        question: "Faut-il être catholique pour être admis à l’école ?",
+        answer: "L’école admet tous les enfants dont les familles adhèrent pleinement au projet pédagogique de l’école. Celui-ci est éclairé par la foi catholique qui s’exprime notamment lors des moments de prière, du cours de formation chrétienne. La Messe est célébrée pour chaque classe 1 à 2 fois par trimestre et l’aumônier se tient à la disposition des personnes désirant se confesser ou s’entretenir avec lui, une fois par semaine. Le travail éducatif à l’école est d’autant plus efficace qu’il est relayé de façon cohérente en famille. C’est pourquoi l’école cherche à associer le plus possible les parents, tant sur le plan du travail scolaire que sur celui de la formation humaine et spirituelle.",
+    },
+    {
+        question: "Quel est le lien avec l’Opus Dei ?",
+        answer: "L’Opus Dei est une institution de l’Eglise Catholique fondée par St Josemaria Escriva, en 1928. L’Opus Dei aide à trouver le Christ dans le travail, la vie familiale, et dans toutes les activités ordinaires. Lorsqu'un groupe de laïcs décide de lancer une initiative éducative (école, club de jeunes...), ils peuvent demander à la Prélature de l'Opus Dei d'en assumer l'animation spirituelle, tout en gardant l'entière responsabilité de la gestion et de la direction pédagogique. C’est le cas de l’école des Tilleuls, créée en 1997, par quelques parents partageant la spiritualité de l’Opus Dei. L’école des Tilleuls bénéficie ainsi de l’assistance spirituelle d’un aumônier, prêtre de l’Opus Dei, à la demande des parents promoteurs et en accord avec l’évêque de Versailles.",
+    },
+    {
+        question: "L’école prépare-t-elle les enfants aux sacrements ?",
+        answer: "L’école propose aux enfants de se confesser et d’assister à la Sainte Messe. Les parents étant les premiers éducateurs, ce sont eux qui préparent au sacrement de la confession. Nous pouvons bien entendu guider les parents qui le souhaitent dans cette préparation. L’école n’organise pas de préparation spécifique à la Première Communion : les enfants des Tilleuls sont préparés soit en paroisse, soit en famille.",
+    },
+    {
+        question: "La chapelle est-elle ouverte en permanence ?",
+        answer: "Oui, la chapelle est ouverte en permanence. Les enfants peuvent demander à y aller pendant les temps de pause. Ils y vont régulièrement avec leur maîtresse pour un moment de prière. Les jours où la Messe est célébrée, l’aumônier laisse le Saint Sacrement dans le Tabernacle jusqu’à la fin des cours. C’est un moment privilégié pour toutes les personnes qui travaillent à l’école pour venir se recueillir dans la chapelle.",
+    },
+    {
+        question: "Quelle implication demande-t-on aux parents ?",
+        answer: "Nous demandons aux parents de suivre le travail scolaire de leur enfant ainsi que son attitude au sein de l’école avec ses camarades, la maîtresse, et tout adulte intervenant à l’école. Nous attendons aussi des parents qu’ils prennent part à l’éducation aux vertus, de façon à travailler main dans la main avec l’école et qu’ils s’intéressent également aux diverses formations qui leur sont proposées au sein de l’école (présentation de la vertu du mois, récollections…) Nous demandons enfin la participation des parents pour la kermesse de l’école, pour les divers accompagnements, l’aide à la préparation du spectacle de fin d’année…",
+    },
+];
+---
+
+<Layout title="FAQ - Questions Fréquentes">
+    <!-- Hero Section -->
+    <div class="relative h-64 md:h-80 overflow-hidden bg-slate-900">
+        <img
+            src="/assets/images/Photo04.jpg"
+            alt="Questions Fréquentes"
+            class="w-full h-full object-cover opacity-60"
+        />
+        <div class="absolute inset-0 flex items-center justify-center">
+            <h1
+                class="text-3xl md:text-5xl font-bold text-white tracking-tight drop-shadow-md text-center px-4"
+            >
+                Questions Fréquentes
+            </h1>
+        </div>
+    </div>
+
+    <div class="bg-white py-16">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+            <div class="space-y-6">
+                {
+                    faqs.map((faq) => (
+                        <details class="group bg-slate-50 border border-slate-200 rounded-xl overflow-hidden transition-all duration-300 hover:shadow-md [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex items-center justify-between p-6 cursor-pointer text-slate-900 font-bold text-lg select-none">
+                                <span>{faq.question}</span>
+                                <span class="transition-transform duration-300 group-open:rotate-180 text-amber-600">
+                                    <svg
+                                        class="w-6 h-6"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        viewBox="0 0 24 24"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M19 9l-7 7-7-7"
+                                        />
+                                    </svg>
+                                </span>
+                            </summary>
+                            <div class="px-6 pb-6 pt-0 text-slate-600 leading-relaxed border-t border-slate-100/0 group-open:border-slate-200 transition-colors">
+                                <div class="mt-4">
+                                    {faq.answer.split("\n").map((line) => (
+                                        <p class="mb-2 last:mb-0">{line}</p>
+                                    ))}
+                                </div>
+                            </div>
+                        </details>
+                    ))
+                }
+            </div>
+        </div>
+    </div>
+</Layout>

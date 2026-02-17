@@ -1,5 +1,5 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 
 // Mock data for Team Members
 const teamMembers = [
@@ -7,74 +7,138 @@ const teamMembers = [
     name: "Mme Sophie Martin",
     role: "Directrice",
     email: "direction@ecoledestilleuls.fr",
-    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" // Placeholder
+    image:
+      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", // Placeholder
   },
   {
     name: "M. Pierre Durand",
     role: "Enseignant CM2",
     email: "pierre.durand@ecoledestilleuls.fr",
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" // Placeholder
+    image:
+      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", // Placeholder
   },
   {
     name: "Mme Claire Lefebvre",
     role: "Enseignant CP",
     email: "claire.lefebvre@ecoledestilleuls.fr",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" // Placeholder
+    image:
+      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", // Placeholder
   },
   {
     name: "M. Thomas Bernard",
     role: "Coordinateur Périscolaire",
     email: "periscolaire@ecoledestilleuls.fr",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" // Placeholder
-  }
+    image:
+      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", // Placeholder
+  },
 ];
 ---
 
 <Layout title="Contacts">
   <div class="bg-slate-50 py-12">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-      
       <!-- Page Header -->
       <div class="text-center mb-16">
-        <h1 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Notre Équipe & Contacts</h1>
+        <h1 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+          Notre Équipe & Contacts
+        </h1>
         <p class="text-slate-600 max-w-2xl mx-auto">
-          Une équipe pédagogique passionnée et à l'écoute pour accompagner vos enfants au quotidien.
+          Une équipe pédagogique passionnée et à l'écoute pour accompagner vos
+          enfants au quotidien.
         </p>
       </div>
 
       <!-- General Info Section -->
-      <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-8 mb-16 max-w-4xl mx-auto">
+      <div
+        class="bg-white rounded-2xl shadow-sm border border-slate-200 p-8 mb-16 max-w-4xl mx-auto"
+      >
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div>
-                <h3 class="text-2xl font-bold text-slate-800 mb-4">Coordonnées</h3>
-                <div class="space-y-4 text-slate-600">
-                    <p class="flex items-start">
-                        <svg class="w-6 h-6 text-slate-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                        <span>
-                            <strong>École des Tilleuls</strong><br>
-                            123 Rue de l'École<br>
-                            75000 Paris
-                        </span>
-                    </p>
-                    <p class="flex items-center">
-                        <svg class="w-6 h-6 text-slate-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-                        <a href="tel:+33123456789" class="hover:text-slate-900 transition flex-1">01 23 45 67 89</a>
-                    </p>
-                    <p class="flex items-center">
-                        <svg class="w-6 h-6 text-slate-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                        <a href="mailto:contact@ecoledestilleuls.fr" class="hover:text-slate-900 transition flex-1">contact@ecoledestilleuls.fr</a>
-                    </p>
-                </div>
+          <div>
+            <h3 class="text-2xl font-bold text-slate-800 mb-4">Coordonnées</h3>
+            <div class="space-y-4 text-slate-600">
+              <p class="flex items-start">
+                <svg
+                  class="w-6 h-6 text-slate-400 mr-3 flex-shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  ></path><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg
+                >
+                <span>
+                  <strong>École des Tilleuls</strong><br />
+                  10 rue Jean Bart<br />
+                  78960 Voisins-le-Bretonneux
+                </span>
+              </p>
+              <p class="flex items-center">
+                <svg
+                  class="w-6 h-6 text-slate-400 mr-3 flex-shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  ></path></svg
+                >
+                <a
+                  href="tel:+33139440670"
+                  class="hover:text-slate-900 transition flex-1"
+                  >01 39 44 06 70</a
+                >
+              </p>
+              <p class="flex items-center">
+                <svg
+                  class="w-6 h-6 text-slate-400 mr-3 flex-shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  ></path></svg
+                >
+                <a
+                  href="mailto:ecole@lestilleuls78.fr"
+                  class="hover:text-slate-900 transition flex-1"
+                  >ecole@lestilleuls78.fr</a
+                >
+              </p>
             </div>
-            <!-- Map Placeholder -->
-            <div class="relative h-64 bg-slate-100 rounded-xl overflow-hidden shadow-inner flex items-center justify-center">
-                <span class="text-slate-400 font-medium">Carte Google Maps ici</span>
-                <!-- <iframe ... ></iframe> -->
-            </div>
+          </div>
+          <!-- Google Map -->
+          <div
+            class="relative h-64 bg-slate-100 rounded-xl overflow-hidden shadow-inner flex items-center justify-center"
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2630.548680186984!2d2.049444315668856!3d48.75239997927764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67f0f6c205791%3A0x6a0a86616428c0a8!2s10%20Rue%20Jean%20Bart%2C%2078960%20Voisins-le-Bretonneux!5e0!3m2!1sfr!2sfr!4v1677685000000!5m2!1sfr!2sfr"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
         </div>
       </div>
 
-      <!-- Team Mosaic Section -->
+      <!-- Team Mosaic Section (Caché temporairement) -->
+      <!-- 
       <h2 class="text-2xl font-bold text-slate-900 text-center mb-10">L'Équipe Pédagogique</h2>
       
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
@@ -101,7 +165,7 @@ const teamMembers = [
           </div>
         ))}
       </div>
-
+      -->
     </div>
   </div>
 </Layout>

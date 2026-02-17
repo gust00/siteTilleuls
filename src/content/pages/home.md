@@ -6,7 +6,7 @@ carouselImages:
 heroTitle: "Bienvenue à l'École des Tilleuls"
 heroSubtitle: "Un établissement où chaque enfant grandit, apprend et s'épanouit dans un cadre bienveillant et stimulant."
 ctaText1: "Découvrir l'école"
-ctaLink1: "/presentation"
+ctaLink1: "/pedagogie"
 ctaText2: "Inscriptions"
 ctaLink2: "/inscription"
 sectionTitle: "Une pédagogie centrée sur l'enfant"
