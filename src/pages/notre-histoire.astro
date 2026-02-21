@@ -1,0 +1,93 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Notre Histoire">
+    <!-- Hero Section -->
+    <div class="relative h-64 md:h-80 overflow-hidden bg-slate-900">
+        <img
+            src="/assets/images/Photo07.jpg"
+            alt="Notre Histoire"
+            class="w-full h-full object-cover opacity-60"
+        />
+        <div class="absolute inset-0 flex items-center justify-center">
+            <h1
+                class="text-3xl md:text-5xl font-bold text-white tracking-tight drop-shadow-md text-center px-4"
+            >
+                Notre Histoire
+            </h1>
+        </div>
+    </div>
+
+    <div class="bg-white py-16">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+            <div
+                class="prose prose-lg prose-slate text-slate-600 mb-16 mx-auto"
+            >
+                <p class="lead text-xl text-[#15977E] font-medium">
+                    Créée en septembre 1997, l’école Les Tilleuls comporte
+                    actuellement 8 classes en niveau simple : de la Petite
+                    Section de maternelle au CM2.
+                </p>
+
+                <p>
+                    C’est une école promue par des parents qui assument la
+                    responsabilité et la gestion de l'établissement dans le
+                    cadre de l’Association pour la Formation Intégrale de la
+                    Personne (AFIP, association loi 1901).
+                </p>
+
+                <p>
+                    Cette association a conclu un contrat d'association avec
+                    l'Etat en 2005. Les 5 classes de l'école élémentaire (du CP
+                    au CM2) sont actuellement sous contrat.
+                </p>
+            </div>
+
+            <!-- Section: Une école au service des parents -->
+            <div
+                class="flex flex-col md:flex-row gap-12 items-center bg-slate-50 p-8 rounded-3xl border border-slate-100"
+            >
+                <div class="md:w-1/2">
+                    <h2
+                        class="text-3xl font-bold text-slate-900 mb-6"
+                        style="font-family: 'EB Garamond', serif;"
+                    >
+                        Une école au service des parents
+                    </h2>
+                    <div class="prose prose-slate text-slate-600 space-y-4">
+                        <p>
+                            Les enseignantes de notre école sont recrutées sur
+                            la base de compétences pédagogiques solides. Elles
+                            adhèrent au projet éducatif dans son intégralité y
+                            compris dans la transmission de la foi.
+                        </p>
+                        <p>
+                            Ce choix d’une équipe pédagogique pleinement
+                            investie dans le projet éducatif constitue la
+                            garantie d’un enseignement de qualité dans le
+                            respect de l’identité propre de l’établissement.
+                        </p>
+                        <p class="font-medium text-slate-800">
+                            L’école des Tilleuls offre une scolarité qui vise
+                            une collaboration efficace et complète entre la
+                            famille et l’école dans un climat de confiance
+                            réciproque.
+                        </p>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <div
+                        class="rounded-2xl overflow-hidden shadow-lg transform rotate-2 hover:rotate-0 transition-transform duration-500"
+                    >
+                        <img
+                            src="/assets/images/Photo14.jpg"
+                            alt="Vie à l'école"
+                            class="w-full h-auto object-cover"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</Layout>
